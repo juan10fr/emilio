@@ -1,0 +1,233 @@
+/* con esta url que nos da la página google font, podremos cambiar el tipo de letra que nos viene por defecto, más personalizado 
+que las opciones que nos da el código html por defecto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contenedor{
+    padding: 60px 0px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: rgb(183, 0, 255);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* header */
+
+header{
+    width:100%;
+    height: 600px;
+    /*Color obtenido de la página UiGradients */
+    background: #8360c3; 
+    background: -webkit-linear-gradient(to right, hsla(261, 45%, 57%, 0.5), hsla(161, 61%, 46%, 0.5)), url(../recursos/hombretrabajando.jpg); 
+    background: linear-gradient(to right, hsla(261, 45%, 57%, 0.5), hsla(161, 61%, 46%, 0.5)), url(../recursos/hombretrabajando.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    text-align: right;
+    padding: 30px 50px 0px 0px;
+}
+nav > a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+.header-textos{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.header-textos h1{
+    font-size: 50px;
+    color: #fff;
+}
+.header-textos h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+.header-textos h3{
+    font-size: 15px;
+    font-weight: 150;
+    color: #fff;
+}
+
+/* Sobre nosotros */
+
+.contenedor-sobre-nosotros2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+.contenido-textos h3 span{
+    background: #8360c3;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-right: 5px;
+}
+.contenido-textos p{
+    padding: 0 0 30px 0;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Galería */
+.portafolio{
+    background-color: #f2f2f2;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 5);
+}
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Clientes */
+.reseñas{
+    display: flex;
+    justify-content: space-evenly;
+}
+.reseñas .reseña{
+    background: #8360c3;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 5);
+}
+.reseñas .reseña img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+.reseñas .reseña > .contenido1{
+    width: 60%;
+    color: #fff;
+}
+.reseñas .reseña > .contenido1 p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*Servicios */
+
+.servicios{
+    background: #f2f2f2;
+}
+.servicio-cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.servicio-ind{
+    width: 40%;
+}
+.servicio-ind img{
+    width: 90%;
+}
+.servicio-ind h3{
+    margin: 10px 0;
+}
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* tweets*/
+
+
+.servicios2{
+    background: #fff;
+}
+.servicio-cont2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.servicio-ind2{
+    width: 200px;
+    margin: 50px;
+}
+.servicio-ind2 h3{
+    margin: 10px 0;
+}
+.servicio-ind2 p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Footer */
+footer{
+background: #8360c3;
+padding: 60px 0 30px 0;
+margin: auto;
+overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ff00f2;
+}
+.contenedor-foot{
+    color: #fff;
+}
+.contenedor-foot .redes{
+    width: 50px;
+    height: 50px;
+}
+.contenedor-footer2 h2{
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
